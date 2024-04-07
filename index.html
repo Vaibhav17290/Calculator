@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+
+            <div class="screen">
+              <p id="screen"></p>
+            </div>
+            <div class="buttons">
+                <button class="number" onclick=openParanthesis() data-key="&#40;">(</button>
+                <button class="number" onclick="closeParanthesis()" data-key="&#41;">)</button>
+                <button class="number" id="ce" onclick="allClear()" data-key="Delete">CE</button>
+                <button class="number" id="c" onclick="backSpace()" data-key="Backspace">C</button>
+                <button class="number" onclick="itsNumber(7)" data-key="7">7</button>
+                <button class="number" onclick="itsNumber(8)" data-key="8">8</button>
+                <button class="number" onclick="itsNumber(9)" data-key="9">9 </button>
+                <button class="number" onclick="itsNumber(' + ')" data-key="+">+</button>
+                <button class="number" onclick="itsNumber(4)" data-key="4">4</button>
+                <button class="number" onclick="itsNumber(5)" data-key="5">5</button>
+                <button class="number" onclick="itsNumber(6)" data-key="6">6</button>
+                <button class="number" onclick="itsNumber(' - ')" data-key="-">-</button>
+                <button class="number" onclick="itsNumber(1)" data-key="1">1</button>
+                <button class="number" onclick="itsNumber(2)" data-key="2">2</button>
+                <button class="number" onclick="itsNumber(3)" data-key="3">3</button>
+                <button class="number" onclick="itsNumber(' * ')" data-key="*">*</button>
+                <button class="number" onclick="itsNumber(0)" data-key="0">0</button>
+                <button class="number" onclick="itsNumber('.')" data-key=".">.</button>
+                <button class="number" onclick="itsNumber(' / ')" data-key="/">/</button>
+                <button class="number" id="isequal"onclick="calculate()" data-key="Enter">=</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.0/math.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
